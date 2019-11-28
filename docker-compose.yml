@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  libertya:
+    build:
+      context: ./libertya
+  postgres:
+    build:
+      context: ./postgres
+    environment:
+      POSTGRES_USER: libertya
+      DB_NAME: libertya
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
