@@ -6,16 +6,6 @@ postgresql. Sino tiene docker o docker-compose debe instalarlo primero:
  * docker => https://docs.docker.com/install/linux/docker-ce/ubuntu/
  * docker-compose => https://docs.docker.com/compose/install/
 
-# JDK
-
-Libertya funciona con el jdk de oracle que solamente se puede bajar desde su
-página web y requiere registrarse con una cuenta en oracle. El archivo se puede
-bajar desde aquí:
-
-https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html
-
-Hay que bajar el archivo `jdk-8u171-linux-x64.tar.gz` y ponerlo en la carpeta `libertya/`. Si se desea cambiar de versión hay que modificar el Dockerfile con las rutas.
-
 # Crear las imagenes y los containers.
 
 Desde la carpeta del proyecto
