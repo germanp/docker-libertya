@@ -1,6 +1,4 @@
-FROM debian:stretch
-
-ADD jdk-8u171-linux-x64.tar.gz /opt
+FROM openjdk:8u232-stretch
 
 RUN useradd -ms /bin/bash libertya
 
@@ -12,10 +10,9 @@ RUN chown libertya:libertya /var/run/libertya
 USER libertya
 
 ENV OXP_HOME=/ServidorOXP
-ENV JAVA_HOME=/opt/jdk1.8.0_171
-ENV PATH="${PATH}:${JAVA_HOME}/bin"
 
 WORKDIR /ServidorOXP
+CMD sleep infinity
 RUN ./ConfigurarAuto.sh
 CMD ./utils/IniciarServidor.sh
 
