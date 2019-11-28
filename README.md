@@ -20,7 +20,6 @@ Hay que bajar el archivo `jdk-8u171-linux-x64.tar.gz` y ponerlo en la carpeta `l
 
 Desde la carpeta del proyecto
 
-`$ docker-compose build`
 `$ docker-compose up -d`
 
 # Accediendo y parando
@@ -30,6 +29,10 @@ Si todo salió bien tiene que libertya debería ser accesible desde `localhost:8
 `$ docker-compose stop`
 
 Revisar la documentaciòn de `docker-compose` para mas opciones.
+
+# ADVERTENCIA
+
+NO usar en producciòn están los passwords hardcodeados!
 
 # Windows
 
